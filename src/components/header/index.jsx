@@ -1,6 +1,7 @@
 import React from 'react';  
 import styles from './styles.module.scss'
 import logo from './../../assets/images/logo.png'
+import { Link } from "react-router-dom";
 
 const Header = () => {
  
@@ -8,18 +9,18 @@ const Header = () => {
      <>
         <div className={styles.header}>
             <div className={styles.headerLogo}>
-                <a href="/">
+                <Link to="/">
                     <img className={styles.headerLogoImg} src={logo} alt="logo"></img>
-                </a> 
+                </Link> 
             </div>
             <div className={styles.headerMenus}>
-                <a href="/" className={styles.headerMenu}>
+                <Link to="/" className={styles.headerMenu}>
                     Home
-                </a>
+                </Link>
 
-                <a href="/my-pokemons" className={styles.headerMenu}>
+                <Link to="/my-pokemons" className={styles.headerMenu}>
                     My Pokemons
-                </a>
+                </Link>
             </div>
         </div>
      </>    

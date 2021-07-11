@@ -3,6 +3,7 @@ import PokemonCard from '../../components/pokemonCard';
 import PokemonDetailModal from '../../components/pokemonDetailModal';
 import Loader from '../../components/loader';
 import styles from './styles.module.scss'
+import { Link } from "react-router-dom";
 
 import { ToastContainer, toast, Slide } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -94,7 +95,7 @@ const Favorites = () => {
                     ))} 
                     
                     {showCollectMessage && (
-                        <div className={styles.noPokemonsText}> oh crap! you dont have any pokemons. <br/>go back to <a href="/">pokedex</a> and click pokeball on the right top to get one! </div>
+                        <div className={styles.noPokemonsText}> oh crap! you dont have any pokemons. <br/>go back to <Link to="/">pokedex</Link> and click pokeball on the right top to get one! </div>
                     )} 
                 </div> 
            )  : (
