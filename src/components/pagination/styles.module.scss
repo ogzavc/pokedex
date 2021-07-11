@@ -1,0 +1,23 @@
+.paginationWrapper{
+    display: flex; 
+    width: 100%;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.paginationButton{
+    padding: 10px 20px;
+    border-radius: 35px;
+    min-width: 80px;
+    text-align: center;
+    margin: 0px 10px;
+    cursor: pointer;
+    background: #e8f1ff;
+    color: #044dc3;
+
+    &:hover{
+        background:#044dc3;
+        color: white;
+        transition: 0.3s ease-in-out;
+    }
+}

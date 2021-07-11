@@ -1,0 +1,127 @@
+$fire: #FDDFDF;
+$grass: #DEFDE0;
+$electric: #FCF7DE;
+$water: #DEF3FD;
+$ground: #f4e7da;
+$rock: #d5d5d4;
+$fairy: #fceaff;
+$poison: #98d7a5;
+$bug: #f8d5a3;
+$dragon: #97b3e6;
+$psychic: #eaeda1;
+$flying: #F5F5F5;
+$fighting: #E6E0D4;
+$normal: #F5F5F5;
+$ghost: #857985;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  width: 100%; 
+  margin-right: auto;
+  margin-left: auto;
+} 
+@media (min-width: 576px) {
+  .container {
+      padding-right: 15px;
+      padding-left: 15px;
+      width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+      width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+      width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+      width: 1140px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+      width: 1500px;
+  }
+}
+
+
+.theme{
+
+  &-fire{
+    background-color: $fire; 
+  }
+
+  &-grass{
+    background-color: $grass;
+  }
+  
+  &-electric{
+    background-color: $electric;
+  }
+  
+  &-water{
+    background-color: $water;
+  }
+  
+  &-ground{
+    background-color: $ground;
+  }
+  
+  &-rock{
+    background-color: $rock;
+  }
+  
+  &-fairy{
+    background-color: $fairy;
+  }
+  
+  &-poison{
+    background-color: $poison;
+  }
+
+  &-bug{
+    background-color: $bug;
+  }
+  
+  &-dragon{
+    background-color: $dragon;
+  }
+  
+  &-psychic{
+    background-color: $psychic;
+  }
+  
+  &-flying{
+    background-color: $flying;
+  }
+  
+  &-fighting{
+    background-color: $fighting;
+  }
+  
+  &-normal{
+    background-color: $normal;
+  } 
+
+  &-ghost{
+    background-color: $ghost;
+  } 
+}

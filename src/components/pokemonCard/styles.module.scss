@@ -1,0 +1,82 @@
+
+
+.pokeContainer{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% - 20px);
+    border-radius: 10px;
+    margin: 10px;
+    padding-top: 20px;
+    position: relative;
+
+    @media (min-width: 480px) {
+        width: calc(50% - 20px);
+    }
+
+    @media (min-width: 768px) {
+        width: calc(33% - 20px);
+    }
+
+    @media (min-width: 992px) {
+        width: calc(25% - 20px);
+    }
+
+    &:hover{
+        cursor: pointer;
+        transition: box-shadow 0.3s ease-in-out;
+        -webkit-box-shadow: 0px 8px 15px 3px rgba(0,0,0,0.6); 
+        box-shadow: 0px 8px 15px 3px rgba(0,0,0,0.6);
+    }
+}
+
+.pokeWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    user-select: none;
+}
+
+.pokeImgWrapper{
+    width: 60%;
+    position: relative;
+    background: white;
+    border-radius: 50%;
+}
+
+.pokeImg{
+    width: 100%;
+    min-width: 100%;
+}
+
+.pokeName{
+    padding: 5px 0px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.pokeTypes{
+    display: flex;
+}
+
+.pokeType{
+    background: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    min-width: 40px;
+    text-align: center;
+    margin: 10px 5px;
+    font-weight: bold;
+}
+
+.pokeBallIcon{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    &:hover{
+        fill: rgb(37, 132, 209);
+    }
+}
