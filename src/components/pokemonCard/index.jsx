@@ -44,7 +44,7 @@ const PokemonCard = ({ pokeData, onPokemonClick, onPokeFavChange}) => {
         <div className={classNames(styles.pokeContainer, [`theme-${types[0].type.name}`])}>
             <div className={styles.pokeWrapper} onClick={() => onPokemonClick(pokeData)}>
                 <div className={styles.pokeImgWrapper}>
-                    <LazyLoad height={200} offset={100}>
+                    <LazyLoad height={200} offset={200}>
                         <img className={styles.pokeImg} src={pokeImgURl} alt=""></img> 
                     </LazyLoad>
                 </div>

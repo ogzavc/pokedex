@@ -33,12 +33,18 @@
 .modalClose{
     color: black;
     float: right;
-    font-size: 28px;
+    font-size: 32px;
     font-weight: bold;
     position: absolute;
-    right: 1px;
+    right: 5px;
     top: -10px;
     cursor: pointer;
+
+    @media (min-width: 992px) {
+        font-size: 28px;
+        right: 1px;
+        top: -10px;
+    }
 }
 
 .detailWrapper{
@@ -50,8 +56,7 @@
     @media (min-width: 992px) {
         border-radius: 0px;
         flex-direction: row;
-    }
- 
+    } 
 }
 
 .detailLeft{
