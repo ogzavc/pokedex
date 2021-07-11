@@ -28,7 +28,7 @@ const Favorites = () => {
         //we are going to send request for each item to set details, after promise complated isloaded state should switch to true
         await Promise.all(data.map( async (pokeId) => {
             try{
-                await fetch("https://pokeapi.co/api/v2/pokemon/"+pokeId)
+                await fetch(process.env.REACT_APP_POKEMON_API_URL+'/'+pokeId)
                 .then(res => res.json())
                 .then(
                     (result) => { 

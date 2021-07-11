@@ -17,7 +17,7 @@ const Home = () => {
     const [pageData, setPageData] = useState({})
 
     useEffect(() => {
-        fetch("https://pokeapi.co/api/v2/pokemon?limit=48")
+        fetch(process.env.REACT_APP_POKEMON_API_URL+"?"+process.env.REACT_APP_POKEMON_API_LIMIT)
           .then(res => res.json())
           .then(
             (data) => { 

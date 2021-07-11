@@ -12,8 +12,8 @@ const PokemonCard = ({ pokeData, onPokemonClick, onPokeFavChange}) => {
     const [isFavorite, setFavorite] = useState(false);
 
     const {name, id, types = []} = pokeData;  
-    const pokeImgBaseUrl = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/';
-    const pokeImgExtension = '.png';
+    const pokeImgBaseUrl = process.env.REACT_APP_POKEMON_IMG_URL;
+    const pokeImgExtension = process.env.REACT_APP_POKEMON_IMG_EXTENSION;
     const pokeImgURl = pokeImgBaseUrl+id+pokeImgExtension; 
 
 
