@@ -22,7 +22,6 @@ const Home = () => {
           .then(
             (data) => { 
                 //we have only names and urls on our pokemons, we will pas them to get details
-                console.log(data);
                 setPageData({
                     next: data.next,
                     prev: data.previous
@@ -74,9 +73,7 @@ const Home = () => {
         fetch(pageUrl)
         .then(res => res.json())
         .then(
-          (data) => { 
-              //we have only names and urls on our pokemons, we will pas them to get details
-              console.log(data);
+          (data) => {  
               setPageData({
                   next: data.next,
                   prev: data.previous

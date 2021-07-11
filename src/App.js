@@ -6,13 +6,13 @@ import Favorites from './screens/favorites';
 
 function App() {
   return (
+    <Router>
     <div className="App container"> 
-        <Header/>
-        <Router>
-          <Route exact path="/" component={Home} /> 
-          <Route exact path="/my-pokemons" component={Favorites} /> 
-        </Router>
-  </div>
+        <Header/> 
+            <Route exact path="/" component={Home} /> 
+            <Route exact path="/my-pokemons" component={Favorites} />  
+      </div>
+  </Router>
   );
 }
 
