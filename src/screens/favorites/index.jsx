@@ -63,12 +63,9 @@ const Favorites = () => {
     const onPokeFavChange = (name,status,id) => {
         let newfavPokemons = pokemons;  
 
-        newfavPokemons.find(function(poke, index) {
-            if(poke.id === id) {
-                poke.isFavorite = false
-                return true; 
-            } 
-        }) 
+        newfavPokemons.filter( (poke, index) => {
+            return poke.id === id;
+        }).isFavorite = false;
 
         if(newfavPokemons.findIndex(x => x.isFavorite === true) === -1) {
             setCollectMessage(true)

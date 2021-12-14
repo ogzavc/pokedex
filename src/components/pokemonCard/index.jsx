@@ -23,7 +23,7 @@ const PokemonCard = ({ pokeData, onPokemonClick, onPokeFavChange}) => {
         if(favoritePokemons.includes(id)){
             setFavorite(true) 
         }
-    }, [])
+    }, [id])
 
 
     const onPokeballClick = (pokeName,pokeId, isFav) => {  
