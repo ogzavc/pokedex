@@ -21,7 +21,7 @@ const Favorites = () => {
 
     useEffect(() => {   
         setPokemonDetails();   
-    }, [])
+    })
 
     async function setPokemonDetails () { 
         let data = cookies.get('poke') ? cookies.get('poke') : [];
